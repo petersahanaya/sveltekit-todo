@@ -81,8 +81,8 @@
 			{/if}
 			{#each $todos as todo (todo.id)}
 				<section
-					on:click={() => handlePopUp(todo.id)}
-					on:dblclick={() => handleRemove(todo.id)}
+					on:dblclick={() => handlePopUp(todo.id)}
+					on:click={() => handleRemove(todo.id)}
 					class="w-[80vw] overflow-hidden  cursor-pointer h-[7rem] p-3 transition-[200ms] mt-4 bg-white rounded-sm hover:bg-slate-50"
 					in:fly={{ y: 30, duration: 300 }}
 					out:fade
